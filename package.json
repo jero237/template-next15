@@ -9,7 +9,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --write src",
-    "format": "npm run lint:fix && bun run prettier",
+    "format": "bun run lint:fix && bun run prettier",
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
